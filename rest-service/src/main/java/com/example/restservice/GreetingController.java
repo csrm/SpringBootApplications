@@ -31,7 +31,7 @@ public class GreetingController {
     }
 
     @PostMapping("/greeting")
-    public @ResponseBody ResponseEntity<String> post() {
+    public ResponseEntity<String> post() {
         return new ResponseEntity<String>("Data Posted",HttpStatus.OK);
     }
 }

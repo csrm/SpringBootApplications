@@ -1,0 +1,12 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<body>
+
+	<div th:if="${message}">
+		<h2 th:text="${message}"/>
+	</div>
+    <div th:if="!${message}">
+        <h3>Sorry!! You are not authorized to view this page</h3>
+    </div>
+
+</body>
+</html>
